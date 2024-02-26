@@ -36,7 +36,7 @@ function App() {
       url: "https://text-translator2.p.rapidapi.com/translate",
       headers: {
         "content-type": "application/x-www-form-urlencoded",
-        "X-RapidAPI-Key": "77a580c492msh2462d53b2d0310ap1e08e4jsn30e00416fb56",
+        "X-RapidAPI-Key": keys,
         "X-RapidAPI-Host": "text-translator2.p.rapidapi.com",
       },
       data: encodedParams,
