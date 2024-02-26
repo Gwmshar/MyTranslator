@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Box from "./Components/Box";
+import keys from "../keys";
 function App() {
   const [select, setSelect] = useState(false);
   const [getLang, setGetLang] = useState({});
@@ -14,7 +15,7 @@ function App() {
       method: "GET",
       url: "https://text-translator2.p.rapidapi.com/getLanguages",
       headers: {
-        "X-RapidAPI-Key": "77a580c492msh2462d53b2d0310ap1e08e4jsn30e00416fb56",
+        "X-RapidAPI-Key": keys,
         "X-RapidAPI-Host": "text-translator2.p.rapidapi.com",
       },
     };
